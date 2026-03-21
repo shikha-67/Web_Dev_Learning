@@ -1,0 +1,38 @@
+body{
+    height: 1000px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+height: 100vh;
+}
+
+.neon{
+    background-color: rgb(47, 47, 116);
+    color: white;
+height:50px;
+width: 200px;
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 10px;
+}
+.neon:hover{
+    cursor: pointer;
+    /* box-shadow : 0 0 giving no values at sides and making a circle */
+    box-shadow: 0 0 100px 50px rgb(255, 0, 119);
+}
+.neon:active{
+    animation: but 0.9s infinite ease;
+}
+@keyframes but {
+    0%{
+        transform: scale(1.1);
+    }
+    50%{
+        transform: scale(1.02);
+    }
+    100%{
+        transform: scale(1.05)
+    }
+}
