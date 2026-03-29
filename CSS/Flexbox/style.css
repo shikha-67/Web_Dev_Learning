@@ -1,0 +1,44 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.parent_1 {
+    height: 200px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: aqua; 
+}
+
+
+@media screen and (max-width: 600px) {
+    /* here when width < 600 px then this property will be applied on parent_1 */
+    .parent_1 {
+        background-color: rgb(230, 173, 211);
+        flex-flow: column wrap;
+       
+    }
+}
+
+.parent_2 {
+    display: flex;
+    flex-direction: row-reverse;
+    height: 100%;
+}
+
+@media screen and (min-width: 600px){
+    .parent_2{
+        background-color: rgb(180, 143, 143);
+    }
+}
+.parent_3 {
+    display: flex;
+    flex-direction: column;
+}
+
+.parent_4 {
+    display: flex;
+    flex-direction: column-reverse;
+
+}
