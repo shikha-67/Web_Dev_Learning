@@ -1,12 +1,14 @@
 let a=8;
-console.log(a);
+console.log(a); //prints 8
 
 var b=89;
 function variable(){
     var b=90;
     console.log(b); // prints 90
 }
-console.log(b); //prints 89 because funton called after this not before this
+console.log(b); //prints 89 because function called after this not before this
+
+
 variable();
 {
     var b=20;
@@ -35,24 +37,6 @@ console.log(d);
 //array,function
 
 
-//number
-let num=20;
-let num1=30;
-console.log(num1,num);
-
-//reassignment to num 
-num=38;
-console.log(num);
-
-
-//string
-let str="Strike";
-let str1="coming";
-console.log(str,str1);
-
-let str2="Strike\n";
-let str3="coming";
-console.log(str2,str3);
 
 
 //boolean
@@ -65,12 +49,7 @@ else{
     console.log(f);
 }
 
-//undefined
 
-var un;
-let und;
-console.log(un);
-console.log(und);
 
 //const undo; //SyntaxError: Missing initializer in const declaration
 //console.log(undo);//SyntaxError: Missing initializer in const declaration
@@ -95,39 +74,6 @@ call(typ3);
 call(typ4);
 console.log(typeof(null));//returns object
 
-
-const int=234598585745874n;
-console.log(int);
-
-const int1=BigInt(23354556672234);
-console.log(int1);
-console.log(typeof(1n));
-console.log(typeof(BigInt("1")));
-console.log(Number.isSafeInteger(4559285829557892222424222n));
-console.log(Number.isSafeInteger(9007199254740991n));
-console.log(Number.isSafeInteger(1n));
-console.log(2n**5n);
-console.log(BigInt(2)**BigInt(54));
-let big1=2n**54n; //2^54
-let big2=BigInt(2)**BigInt(54);
-console.log(big1===big2);
-console.log(null==undefined);
-console.log(null==0);
-console.log(Number(null)==0);
-console.log(null>=0);
-console.log(null>0);
-console.log(1n==2);
-console.log(Number(1n)==Number(2));
-console.log(1n==1);
-console.log(Number(1n)==Number(1));
-
-
-const no=23;
-console.log(no);
-
-console.log(no);//TypeError: Assignment to constant variable.
-
-console.log(null==undefined);
 
 array=[2,"hi",3.5];
 console.log(array[2]);
