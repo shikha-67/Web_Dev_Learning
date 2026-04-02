@@ -1,7 +1,3 @@
-// Inside ch_1.js, change to:
-//const path = require('path');
-//const targetPath = path.join(__dirname, 'ch_1.js');  // Self or correct sibling
-// Or if another file: path.join(__dirname, '..', 'otherfile.js');
 let a=8;
 console.log(a);
 
@@ -43,6 +39,10 @@ console.log(d);
 let num=20;
 let num1=30;
 console.log(num1,num);
+
+//reassignment to num 
+num=38;
+console.log(num);
 
 
 //string
@@ -122,4 +122,35 @@ console.log(1n==1);
 console.log(Number(1n)==Number(1));
 
 
-l
+const no=23;
+console.log(no);
+
+console.log(no);//TypeError: Assignment to constant variable.
+
+console.log(null==undefined);
+
+array=[2,"hi",3.5];
+console.log(array[2]);
+
+obj={
+    name:"Shi",
+    class:10
+}
+console.log(obj.name);
+console.log(obj["class"]);
+let todo=[];
+console.log(todo);
+let user=null;
+console.log(user);
+let name;
+console.log(name);
+let data={};
+
+
+let nam = "Shikha";
+let age = 22;
+console.log(`Hi' ${nam}, you are ${age}`);
+ 
+nam ="allen";
+age=89;
+console.log("hi" +nam);
