@@ -18,3 +18,14 @@ console.log(str,str1);
 let str2="Strike\n";
 let str3="coming";
 console.log(str2,str3);
+
+//boolean
+let t=true;
+let f=false;
+if(t){
+    console.log(t);
+}
+else{
+    console.log(f);
+}
+
