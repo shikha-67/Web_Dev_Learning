@@ -29,3 +29,4 @@ console.log(d);
 
 //d=89;
 //console.log(d); //TypeError: Assignment to constant variable.
+
